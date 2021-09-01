@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { IntlProvider } from 'react-intl';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ConstPage from './components/pages/ConstPage';
+import CssExPage from './components/pages/CssExPage';
+import DelayPage from './components/pages/DelayPage';
+import IntlPage from './components/pages/IntlPage';
+import MainPage from './components/pages/MainPage';
 
 function App() {
+
+  const [Lang, setLang] = useState("en")
+  const message = require(`../lang/${Lang}.json`)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IntlProvider formats={Lang} messages={message}>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={MainPage}/>
+          <Route exact path="/css" component={CssExPage}/>
+          <Route exact path="/const" component={ConstPage}/>
+          <Route exact path="/delay" component={DelayPage}/>
+          <Route exact path="/intl" component={() => <IntlPage changeFunc={setLang}/>}/>
+        </Switch>
+      </Router>
+    </IntlProvider>
   );
 }
 

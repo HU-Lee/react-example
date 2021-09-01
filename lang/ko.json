@@ -1,0 +1,5 @@
+{
+    "name" : "이현욱",
+    "hobby": "코딩",
+    "sentence": "내 이름은 {name}이고, 취미는 {hobby}입니다. {url}"
+}
