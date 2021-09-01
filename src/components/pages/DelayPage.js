@@ -33,7 +33,7 @@ function DelayPage() {
     return (
         <>
             <h1>지연 초기화, useEffect</h1>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://github.com/HU-Lee/react-example/blob/main/src/components/pages/DelayPage.js" target="_blank" rel="noreferrer">
                 <h3>&#128279; 원본 소스 보기</h3>
             </a>
             <br/>

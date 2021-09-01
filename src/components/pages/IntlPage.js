@@ -16,7 +16,7 @@ function IntlPage({lang, changeFunc}) {
             <a href="https://www.npmjs.com/package/react-intl" target="_blank" rel="noreferrer">
                 <h3>&#128279; npm - react-intl</h3>
             </a>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://github.com/HU-Lee/react-example/blob/main/src/components/pages/IntlPage.js" target="_blank" rel="noreferrer">
                 <h3>&#128279; 원본 소스 보기</h3>
             </a>
             <Wrapper>

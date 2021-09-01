@@ -9,7 +9,7 @@ function CssExPage() {
     return (
         <>
             <h1>CSS</h1>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://github.com/HU-Lee/react-example/blob/main/src/components/pages/CssExPage.js" target="_blank" rel="noreferrer">
                 <h3>&#128279; 원본 소스 보기</h3>
             </a>
             <h3>1. Extended Border</h3>

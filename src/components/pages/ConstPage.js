@@ -24,7 +24,7 @@ function ConstPage() {
     return (
         <>
             <h1>useRef, useState</h1>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="https://github.com/HU-Lee/react-example/blob/main/src/components/pages/ConstPage.js" target="_blank" rel="noreferrer">
                 <h3>&#128279; 원본 소스 보기</h3>
             </a>
             <h4>1. 일반 변수</h4>
