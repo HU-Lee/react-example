@@ -10,11 +10,11 @@ import MainPage from './components/pages/MainPage';
 function App() {
 
   const [Lang, setLang] = useState("en")
-  const message = require(`../lang/${Lang}.json`)
+  const message = require(`./lang/${Lang}.json`)
 
   return (
-    <IntlProvider formats={Lang} messages={message}>
-      <Router>
+    <IntlProvider formats={Lang} messages={message} locale="en">
+      <Router basename="/react-example">
         <Switch>
           <Route exact path="/" component={MainPage}/>
           <Route exact path="/css" component={CssExPage}/>
