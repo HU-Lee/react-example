@@ -16,11 +16,11 @@ function App() {
     <IntlProvider formats={Lang} messages={message} locale="en">
       <Router basename="/react-example">
         <Switch>
-          <Route exact path="/" component={MainPage}/>
-          <Route exact path="/css" component={CssExPage}/>
-          <Route exact path="/const" component={ConstPage}/>
-          <Route exact path="/delay" component={DelayPage}/>
-          <Route exact path="/intl" component={() => <IntlPage changeFunc={setLang}/>}/>
+          <Route exact path="/"       component={MainPage}/>
+          <Route exact path="/css"    component={CssExPage}/>
+          <Route exact path="/const"  component={ConstPage}/>
+          <Route exact path="/delay"  component={DelayPage}/>
+          <Route exact path="/intl"   component={() => <IntlPage changeFunc={setLang}/>}/>
         </Switch>
       </Router>
     </IntlProvider>

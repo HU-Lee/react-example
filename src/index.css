@@ -12,9 +12,10 @@ code {
     monospace;
 }
 
-a, h1, h2, h3, h4, h5 {
+a, h1, h2, h3, h4, h5, b {
   text-align: center;
   text-decoration: none;
+  display: block;
 }
 
 a {

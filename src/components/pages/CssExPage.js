@@ -12,10 +12,15 @@ function CssExPage() {
             <a href="https://github.com/HU-Lee/react-example/blob/main/src/components/pages/CssExPage.js" target="_blank" rel="noreferrer">
                 <h3>&#128279; 원본 소스 보기</h3>
             </a>
+
             <h3>1. Extended Border</h3>
             <Wrapper>
                 <ExtendedDiv/>
             </Wrapper>
+            
+            <br/>
+            <br/>
+
             <h3>2. Grid</h3>
             <a href="https://studiomeal.com/archives/533" target="_blank" rel="noreferrer">
                 <h3>&#128279; 외부 링크 : 이번에야말로 CSS Grid를 익혀보자</h3>
@@ -25,6 +30,7 @@ function CssExPage() {
                     <GridItem key={a}/>
                 ))}
             </GridContainer>
+            
             <Wrapper>
                 <NormalLink to="/" color="lightblue">Home</NormalLink>
             </Wrapper>

@@ -12,11 +12,15 @@ function MainPage() {
             <a href="https://github.com/HU-Lee/react-example/blob/main/src/components/pages/MainPage.js" target="_blank" rel="noreferrer">
                 <h3>&#128279; 원본 소스 보기</h3>
             </a>
+
             <Wrapper>
                 <NormalButton size="large">큰 버튼</NormalButton>
                 <NormalButton>작은 버튼</NormalButton>
                 <NormalButton color="red">빨간 버튼</NormalButton>
             </Wrapper>
+            
+            <br/>
+
             <h2>기타 페이지</h2>
             <Wrapper>
                 <NormalLink to="/intl" color="lightblue">React Intl</NormalLink>

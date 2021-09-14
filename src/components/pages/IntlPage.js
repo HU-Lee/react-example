@@ -19,13 +19,17 @@ function IntlPage({lang, changeFunc}) {
             <a href="https://github.com/HU-Lee/react-example/blob/main/src/components/pages/IntlPage.js" target="_blank" rel="noreferrer">
                 <h3>&#128279; 원본 소스 보기</h3>
             </a>
+
             <Wrapper>
                 <CounterButton onClick={() => changeFunc("ko")}>KO</CounterButton>
                 <CounterButton onClick={() => changeFunc("en")}>EN</CounterButton>
             </Wrapper>
+            
             <h3>1.기본</h3>
             <FormattedMessage id="name" tagName="h2"/>
+            
             <br/>
+            
             <h3>2.포맷</h3>
             <FormattedMessage id="sentence" tagName="h2"
                 values={{
@@ -41,9 +45,14 @@ function IntlPage({lang, changeFunc}) {
                     )
                 }}
             />
+            
             <br/>
+            
             <h3>3. String 사용하기</h3>
             <h2><b style={{color:'red'}}>{name}</b> &#10084; {hobby}</h2>
+            
+            <br/>
+
             <Wrapper>
                 <NormalLink to="/" color="lightblue">Home</NormalLink>
             </Wrapper>
